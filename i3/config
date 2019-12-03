@@ -187,6 +187,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 bindsym $mod+u exec rofi -show run -no-click-to-exit
 
 for_window [class="^.*"] border pixel 1
+assign [class="Conky"] workspace 1
 
 exec --no-startup-id onboard &
-exec --no-startup-id gebaard -b &
+exec --no-startup-id conky &
