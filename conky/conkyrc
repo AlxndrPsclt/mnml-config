@@ -69,7 +69,7 @@ conky.config = {
     gap_x = 60,
     gap_y = 25,
     minimum_height = 5,
-    minimum_width = 5,
+    minimum_width = 1080,
     net_avg_samples = 2,
     no_buffers = true,
     out_to_console = false,
@@ -78,7 +78,7 @@ conky.config = {
     out_to_x = true,
     own_window = true,
     own_window_class = 'Conky',
-    own_window_type = 'override',
+    own_window_type = 'desktop',
     show_graph_range = false,
     show_graph_scale = false,
     stippled_borders = 0,
@@ -89,9 +89,8 @@ conky.config = {
 }
 
 conky.text = [[
-${font Iosevka:style=Regular:size=200}$color5${time %R}$font
-${goto 23}${voffset 25}$color4${time %a %b %d}
-#$hr
+${alignc }${font Iosevka:style=Regular:size=200}$color5${time %R}$font
+${alignc }${voffset 25}$color4${time %a %b %d}
 #${color grey}Wifi network: ${wireless_essid wlan0}
 #${color grey}RAM Usage: $memperc%
 #${color grey}CPU Usage: $cpu%
