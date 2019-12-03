@@ -89,7 +89,7 @@ conky.config = {
 }
 
 conky.text = [[
-${alignc }${font Iosevka:style=Regular:size=200}$color5${time %R}$font
+${alignc }${voffset 100}${font Iosevka:style=Regular:size=200}$color5${time %R}$font
 ${alignc }${voffset 25}$color4${time %a %b %d}
 #${color grey}Wifi network: ${wireless_essid wlan0}
 #${color grey}RAM Usage: $memperc%
