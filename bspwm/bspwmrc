@@ -35,6 +35,9 @@ bspc config gapless_monocle      true
 #bspc rule -a main-term desktop=^2
 #st -c main-term tmux &
 
+st &
+svkbd-mobile-intl &
+
 screenwidth=720
 screenheight=1440
 
