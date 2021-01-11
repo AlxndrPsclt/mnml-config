@@ -32,13 +32,16 @@ bspc config single_monocle   true
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-#bspc rule -a main-term desktop=^2
+bspc rule -a main-term desktop=^2
+bspc rule -a Conky desktop=^1
 #st -c main-term tmux &
 
 #bspc rule -a svkbd manage=on border=off state=tiled
 
-st tmux &
+picom &
+st -c "main-term" tmux &
 lisgd &
+conky &
 
 screenwidth=720
 screenheight=1440
