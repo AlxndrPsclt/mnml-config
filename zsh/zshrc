@@ -167,6 +167,7 @@ export EDITOR='vim'
 
 #. /usr/bin/virtualenvwrapper.sh
 
+export FZF_ALT_C_COMMAND='fd --type d .'
 
 export PATH="$PATH:~/.config/perso/tools"
 
