@@ -1,7 +1,3 @@
 #!/usr/bin/env sh
 
-will=$(echo -e "yes\nno" | dmenu -p "Suspend the computer ?")
-
-if [[ $will == 'yes' ]]; then
-	halt
-fi
+sudo loginctl suspend
