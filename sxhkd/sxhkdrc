@@ -52,6 +52,9 @@ XF86AudioMicMute
 XF86AudioMute
 	/home/alex/.config/perso/tools/actions/scripts/sound/.TOGGLE_MUTE.sh
 
+XF86PowerOff
+	/home/alex/.config/perso/tools/actions/scripts/power/SUSPEND
+
 super + Prior
 	/home/alex/.config/perso/tools/actions/scripts/sound/UP
 

@@ -3,10 +3,10 @@
 battery_capacity=$(cat /sys/class/power_supply/axp20x-battery/capacity)
 battery_status=$(cat /sys/class/power_supply/axp20x-battery/status)
 
-battery_icons=("_____" "■____" "■■___" "■■■__" "■■■■_" "■■■■■")
+battery_icons=("_____" "■____" "■.___" "■■___" "■■.__" "■■■__" "■■■._" "■■■■_" "■■■■." "■■■■■")
 
 declare -i level
-level="$battery_capacity/20 +1"
+level="$battery_capacity/10"
 
 if [[ "$battery_status" == "Charging" ]]; then
   message=''
